@@ -653,6 +653,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    padding: 0;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -668,6 +671,9 @@ template {
   .hotel-info__name {
     margin-top: 10px;
     margin-bottom: 0;
+  }
+  .hotel-info__description {
+    max-width: 80%;
   }
   .hotel-info__rating {
     display: none;

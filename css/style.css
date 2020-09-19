@@ -554,8 +554,18 @@ template {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.star {
+  margin-right: 3px;
 }
 
 .offer {
@@ -580,6 +590,10 @@ template {
 .rating__text {
   font-size: 8px;
   line-height: 10px;
+}
+
+.rating__counter_max {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {

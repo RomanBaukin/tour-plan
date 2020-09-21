@@ -637,6 +637,7 @@ template {
   height: 30px;
   border: none;
   cursor: pointer;
+  outline: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;

@@ -837,7 +837,7 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 48px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -934,7 +934,7 @@ template {
     margin-bottom: 0;
   }
   .hotel-info__description {
-    max-width: 80%;
+    max-width: 84%;
   }
   .hotel-info__rating {
     display: none;
@@ -964,14 +964,32 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 87%;
+  }
   .logo {
     width: 99px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
+  }
+  .hotel-grid {
+    padding: 18px 0 40px;
+  }
+  .hotel-right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .booking {
+    max-height: 210px;
+    margin-bottom: 20px;
+  }
+  .map {
+    max-height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */

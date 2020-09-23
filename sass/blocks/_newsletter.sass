@@ -1,9 +1,10 @@
 .newsletter
   position: relative
+  max-height: 260px
   padding: 98px 0 87px
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
-  background-position: center
+  background-position: center 48%
   background-size: cover
   &::before
     content: ''
@@ -25,6 +26,7 @@
   &-title
     display: flex
     flex-direction: column
+    margin: 0
     color: $light
     font-style: normal
     font-weight: 300
@@ -63,6 +65,10 @@
     border: none
     background-color: $primary
     color: $light
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
 
 
 

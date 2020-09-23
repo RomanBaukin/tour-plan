@@ -692,7 +692,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 29px 29px 26px 26px;
   font-family: Nunito;
   font-style: normal;
 }
@@ -823,10 +823,11 @@ template {
 
 .newsletter {
   position: relative;
+  max-height: 260px;
   padding: 98px 0 87px;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 48%;
   background-size: cover;
 }
 
@@ -865,6 +866,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
@@ -911,6 +913,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -952,6 +958,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 57px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -969,12 +978,16 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 29px 22px 26px 23px;
   }
   .slider {
     width: 100%;
   }
   .map {
     width: 340px;
+  }
+  .newsletter {
+    padding: 93px 0 92px;
   }
 }
 
@@ -1017,7 +1030,7 @@ template {
         flex-basis: auto;
   }
   .hotel {
-    padding: 0;
+    padding-top: 0;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -1086,10 +1099,14 @@ template {
   .slider {
     height: 179px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel-grid {
-    padding: 18px 0 40px;
+    padding-top: 18px;
   }
   .hotel-right {
+    min-height: 405px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1105,7 +1122,19 @@ template {
     max-height: 172px;
   }
   .newsletter {
+    min-height: 320px;
     padding: 76px 0 83px;
+  }
+  .newsletter-wrapper {
+    width: 87%;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
   .newsletter__title {
     margin-bottom: 37px;

@@ -29,6 +29,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 57px
     &-grid
       flex-direction: column
     &__slider
@@ -37,10 +38,13 @@
       flex-direction: row
   .booking
     width: 340px
+    padding: 29px 22px 26px 23px
   .slider
     width: 100%
   .map
     width: 340px
+  .newsletter
+    padding: 93px 0 92px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -67,7 +71,7 @@
   .stars
     flex-basis: auto
   .hotel
-    padding: 0
+    padding-top: 0
     &-name
       flex-basis: 100%
     &-wrapper
@@ -109,9 +113,11 @@
   .slider
     height: 179px
   .hotel
+    padding-bottom: 40px
     &-grid
-      padding: 18px 0 40px
+      padding-top: 18px
     &-right
+      min-height: 405px
       justify-content: start
     &__slider
       margin-bottom: 20px
@@ -121,7 +127,16 @@
   .map
     max-height: 172px
   .newsletter
+    min-height: 320px
     padding: 76px 0 83px
+    &-wrapper
+      width: 87%
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
     &__title
       margin-bottom: 37px
   .subscribe

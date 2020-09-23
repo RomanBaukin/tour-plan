@@ -1065,9 +1065,9 @@ template {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 970px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
   .hotel-slider__picture {

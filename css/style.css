@@ -986,6 +986,7 @@ template {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
   z-index: 99;
 }
 

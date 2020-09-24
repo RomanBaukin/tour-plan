@@ -48,6 +48,17 @@
     &-slider
       &__item
         max-width: 580px
+      &__button
+        &_prev
+          left: 2px
+          top: 50%
+        &_next
+          right: 2px
+          top: 50%
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -117,12 +128,17 @@
         top: 32px
         &_prev
           left: 50%
-          margin-left: -65px
+          margin-left: -90px
           transform: translate(-50%, 0)
         &_next
           right: 50%
-          margin-right: -65px
-          transform: translate(50%, 0)          
+          margin-right: -90px
+          transform: translate(50%, 0)
+    &__title
+      font-size: 18px
+      line-height: 23px
+      width: 98%
+      margin-bottom: 44px
 @media (max-width: 576px)
   .container
     max-width: 87%
@@ -139,6 +155,8 @@
       margin-bottom: 20px
     &-slider
       height: 179px
+  .stars
+    padding-right: 11px
   .booking
     max-height: 210px
     margin-bottom: 20px
@@ -159,6 +177,8 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    padding-top: 36px
 
   
 

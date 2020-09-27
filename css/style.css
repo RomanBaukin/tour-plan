@@ -1280,18 +1280,23 @@ template {
 
 .packages-grid__picture {
   position: relative;
+  height: 250px;
+}
+
+.packages-grid__picture_big {
+  min-width: 366px;
+  height: 500px;
 }
 
 .packages-grid__img {
+  position: absolute;
   width: 100%;
-  height: 250px;
+  height: 100%;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.packages-grid__img_big {
-  min-width: 366px;
-  height: 100%;
+  z-index: 1;
 }
 
 .packages-grid__offer {
@@ -1299,6 +1304,7 @@ template {
   top: 26px;
   font-size: 8px;
   line-height: 10px;
+  z-index: 2;
 }
 
 .packages-grid__offer_big {
@@ -1414,6 +1420,54 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .packages {
+    padding: 20px 0 60px;
+  }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .packages-grid {
+    -ms-grid-rows: 350px 350px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template: 350px 350px/repeat(3, 1fr);
+    gap: 20px;
+  }
+  .packages-grid__picture {
+    max-height: 160px;
+  }
+  .packages-grid__picture_big {
+    min-width: 220px;
+    max-height: 350px;
+  }
+  .packages-grid__description {
+    padding: 15px 10px;
+  }
+  .packages-grid__description_big {
+    padding: 20px 15px;
+  }
+  .packages-grid__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  .packages-grid__text_big {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+  .packages-grid__param {
+    margin-bottom: 7px;
+  }
+  .packages-grid__param:nth-last-child(3) {
+    margin-bottom: 14px;
+  }
+  .packages-grid__button {
+    right: 12px;
+    bottom: 15px;
+    padding: 8px 18px;
   }
   .newsletter {
     padding: 93px 0 92px;
@@ -1537,6 +1591,41 @@ template {
   }
   .map {
     width: 100%;
+  }
+  .packages-grid {
+    -ms-grid-rows: auto 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: auto 1fr / 1fr;
+  }
+  .packages-grid__item:nth-child(1) {
+    display: block;
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+  .packages-grid__picture_big {
+    max-height: 160px;
+  }
+  .packages-grid__offer_big {
+    font-size: 8px;
+    line-height: 10px;
+    padding: 4px 9px;
+  }
+  .packages-grid__description_big {
+    padding: 15px 10px;
+  }
+  .packages-grid__stars {
+    display: none;
+  }
+  .packages-grid__text_big {
+    display: none;
+  }
+  .packages-grid__price_big {
+    margin-top: 0;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 44px;
   }
   .newsletter-wrapper {
     max-width: 576px;

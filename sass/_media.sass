@@ -45,6 +45,41 @@
     padding: 29px 22px 26px 23px
   .map
     width: 340px
+  .packages
+    padding: 20px 0 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-grid
+      grid-template: 350px 350px / repeat(3, 1fr)
+      gap: 20px
+      &__picture
+        max-height: 160px
+        &_big
+          min-width: 220px
+          max-height: 350px
+      &__description
+        padding: 15px 10px
+        &_big
+          padding: 20px 15px
+      &__title
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 12px
+      &__text
+        &_big
+          font-size: 10px
+          line-height: 15px
+          margin-bottom: 15px
+      &__param
+        margin-bottom: 7px
+        &:nth-last-child(3)
+          margin-bottom: 14px
+      &__button
+        right: 12px
+        bottom: 15px
+        padding: 8px 18px
   .newsletter
     padding: 93px 0 92px
   .reviews
@@ -126,6 +161,37 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-grid
+      grid-template: auto 1fr / 1fr
+      &__item
+        &:nth-child(1)
+          display: block
+          grid-column-start: span 1
+      &__picture
+        &_big
+          max-height: 160px
+      &__offer
+        &_big
+          font-size: 8px
+          line-height: 10px
+          padding: 4px 9px
+      &__description
+        &_big
+          padding: 15px 10px
+      &__stars
+        display: none
+      &__text
+        &_big
+          display: none
+      &__price
+        &_big
+          margin-top: 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 44px
+
   .newsletter
     &-wrapper
       max-width: 576px

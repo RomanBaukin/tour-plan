@@ -5,11 +5,11 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    grid-gap: 20px
+    grid-gap: 23px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 153px
     align-self: stretch
     grid-row: 1 / 3
   &__categories
@@ -47,9 +47,9 @@
     margin: 0 0 16px
     text-transform: uppercase
     &_inline
-      margin: 0 43px 0 0
+      margin: 0 47px 0 0
     &_bottom
-      margin-bottom: 30px
+      margin-bottom: 25px
   &__item
     display: flex
     align-items: flex-start
@@ -65,7 +65,11 @@
       min-width: 40px
   &__text
     color: $gray
-    margin-bottom: 22px
+    font-size: 14px
+    line-height: 23px
+    margin-bottom: 27px
+  &__legal
+    margin-left: 66px
   &__link
     text-decoration: none
     color: inherit
@@ -105,4 +109,17 @@
     font-size: 12px
     line-height: 15px
     color: #e0e0e0
-
+  &-disclaimer
+    display: flex
+    justify-content: flex-end
+    margin-top: 96px
+    &__links
+      margin-right: 265px 
+    &__link
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      margin-right: 10px

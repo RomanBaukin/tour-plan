@@ -1880,6 +1880,7 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;

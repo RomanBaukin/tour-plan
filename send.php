@@ -5,18 +5,27 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$email = $_POST['email'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
+if ((isset($_POST['email']))) {
+  $title = "Новая заявка на подписку";
+  $body = "
+<h2>Новая заявка</h2>
+<b>E-mail:</b> $email<br>
+";
+} else {
+  $title = "Новое обращение Best Tour Plan";
+  $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

@@ -39,6 +39,10 @@ $(document).ready(function () {
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27) $(".modal__close").click();
+  });
+
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");

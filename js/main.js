@@ -57,4 +57,34 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least two letters",
+        },
+        email: {
+          required: "Please enter your email address",
+          email: "Format email address: name@domain.com",
+        },
+        phone: {
+          required: "Please enter your phone number",
+        },
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element.form)
+          .find("label[for=" + element.id + "]")
+          .addClass(errorClass);
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element.form)
+          .find("label[for=" + element.id + "]")
+          .removeClass(errorClass);
+      },
+    });
+  });
+  // Подключение маски для поля телефон
+  $('input[name="phone"]').mask("+7 (000) 000-00-00");
 });

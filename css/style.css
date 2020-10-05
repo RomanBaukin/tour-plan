@@ -46,6 +46,7 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .form {
@@ -60,6 +61,14 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.error {
+  color: #EC1F46;
+  position: absolute;
+  top: 33px;
+  left: 23px;
+  font-size: 12px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -496,6 +505,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -983,6 +993,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1549,6 +1560,11 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
+  position: relative;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1642,7 +1658,6 @@ template {
   font-size: 18px;
   line-height: 23px;
   margin-top: 0;
-  margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1657,13 +1672,23 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+}
+
+.modal__input-group {
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1689,7 +1714,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1846,7 +1871,7 @@ template {
         grid-template-rows: min-content;
     grid-row-gap: 45px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2132,7 +2157,7 @@ template {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2350,7 +2375,7 @@ template {
   .modal__dialog {
     padding: 33px 35px;
   }
-  .modal__input, .modal__message {
+  .modal__input-group, .modal__message {
     font-size: 85%;
   }
 }

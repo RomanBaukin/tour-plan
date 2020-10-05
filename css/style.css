@@ -1655,7 +1655,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1687,9 +1687,12 @@ template {
 
 .modal__button {
   margin-top: 15px;
+  min-width: 160px;
+  padding: 18px;
 }
 
 .modal__info {
+  margin-top: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

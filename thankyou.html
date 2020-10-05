@@ -194,12 +194,22 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_bottom">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
-              <textarea class="footer__message" placeholder="Message" name="message"></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+            <form action="send.php" method="POST" class="form modal__form">
+              <div class="modal__input-group">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+              </div>
+              <!-- /.modal__input-group -->
+              <div class="modal__input-group">
+                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+              </div>
+              <!-- /.modal__input-group -->
+              <div class="modal__input-group">
+                <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+              </div>
+              <!-- /.modal__input-group -->
+              <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+              <button class="button modal__button" type="submit">Send</button>
+              <span class="modal__info">* Required Fields</span>
             </form>
           </div>
           <!-- /.footer__contact-form -->

@@ -1603,6 +1603,11 @@ template {
   margin-right: 10px;
 }
 
+.footer__button {
+  min-width: 160px;
+  padding: 18px;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;

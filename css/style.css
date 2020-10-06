@@ -1749,6 +1749,9 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .button, a {
+    cursor: default;
+  }
   .logo {
     width: 132px;
   }
@@ -1767,8 +1770,14 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__link::after {
+    background: none;
+  }
   .search__input {
     width: 340px;
+  }
+  .search__button {
+    cursor: default;
   }
   .hotel {
     padding-bottom: 57px;
@@ -1848,6 +1857,9 @@ template {
   }
   .newsletter {
     padding: 93px 0 92px;
+  }
+  .subscribe__button {
+    cursor: default;
   }
   .reviews-slider__item {
     max-width: 580px;

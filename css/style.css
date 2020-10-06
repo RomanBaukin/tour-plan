@@ -468,6 +468,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__link:hover {
+  color: #EC1F46;
+}
+
 .navbar-menu__item_mobile_visible {
   display: none;
 }

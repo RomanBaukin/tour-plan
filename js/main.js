@@ -73,16 +73,6 @@ $(document).ready(function () {
           required: "Please enter your phone number",
         },
       },
-      highlight: function (element, errorClass, validClass) {
-        $(element.form)
-          .find("label[for=" + element.id + "]")
-          .addClass(errorClass);
-      },
-      unhighlight: function (element, errorClass, validClass) {
-        $(element.form)
-          .find("label[for=" + element.id + "]")
-          .removeClass(errorClass);
-      },
     });
   });
   // Подключение маски для поля телефон

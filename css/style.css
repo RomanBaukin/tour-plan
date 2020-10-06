@@ -61,7 +61,7 @@ img {
       flex-wrap: wrap;
 }
 
-.error {
+label.error {
   color: #EC1F46;
   position: absolute;
   top: 33px;

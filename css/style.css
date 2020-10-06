@@ -1914,7 +1914,7 @@ template {
     margin-top: 18px;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    grid-column: span 15;
     -ms-grid-row: 4;
     grid-row: 4;
   }
@@ -1922,7 +1922,7 @@ template {
     margin-left: 9px;
   }
   .footer-disclaimer {
-    margin-top: -20px;
+    margin-top: 10px;
   }
   .modal__dialog {
     padding: 33px 60px;
@@ -2163,6 +2163,7 @@ template {
         flex-basis: 100%;
   }
   .modal__dialog {
+    width: 70%;
     padding: 33px 50px;
   }
   .modal__button {
@@ -2374,6 +2375,7 @@ template {
     max-width: 47%;
   }
   .modal__dialog {
+    width: 88%;
     padding: 33px 35px;
   }
   .modal__input-group, .modal__message {

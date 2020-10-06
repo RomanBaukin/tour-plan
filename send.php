@@ -78,3 +78,6 @@ try {
 
 // Отображение результата
 header('Location: thankyou.html');
+
+// Отображение багов
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

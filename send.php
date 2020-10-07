@@ -42,19 +42,19 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
   $mail->isSMTP();
   $mail->CharSet = "UTF-8";
-  $mail->SMTPAuth   = true;
+  $mail->SMTPAuth = false;
+  $mail->SMTPAutoTLS = false;
   // $mail->SMTPDebug = 2;
   $mail->Debugoutput = function ($str, $level) {
     $GLOBALS['status'][] = $str;
   };
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'anna.beloborodova.anna@gmail.com'; // Логин на почте
-  $mail->Password   = 'zxc098iop'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
-  $mail->setFrom('anna.beloborodova.anna@gmail.com', 'Анна Белобородова'); // Адрес самой почты и имя отправителя
+  $mail->Host       = 'mail.roman-baukin.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'admin@roman-baukin.ru'; // Логин на почте
+  $mail->Password   = 'gggHHH70970588GGGhhh'; // Пароль на почте
+  $mail->Port       = 25;
+  $mail->setFrom('admin@roman-baukin.ru', 'admin@roman-baukin.ru'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('rbaukin@mail.ru');

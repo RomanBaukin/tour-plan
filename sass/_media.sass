@@ -17,8 +17,6 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
-  .button, a
-    cursor: default
   .logo
     width: 132px
   .navbar
@@ -38,8 +36,6 @@
   .search
     &__input
       width: 340px
-    &__button
-      cursor: default
   .hotel
     padding-bottom: 57px
     &-grid
@@ -92,9 +88,6 @@
         padding: 8px 18px
   .newsletter
     padding: 93px 0 92px
-  .subscribe
-    &__button
-      cursor: default
   .reviews
     &-slider
       &__item
@@ -477,3 +470,8 @@
       padding: 33px 35px
     &__input-group, &__message
       font-size: 85%
+
+@media (min-width: 992px)
+  .button, .subscribe__button, .search__button
+    &:hover
+      background-color: #be2a45

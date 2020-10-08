@@ -77,6 +77,15 @@ $(document).ready(function () {
   });
   // Подключение маски для поля телефон
   $('input[name="phone"]').mask("+7 (000) 000-00-00");
+  // Подключение карты при наведении мыши
+  var map = document.querySelector(".map__frame");
+  map.addEventListener("mouseover", initMap);
+  function initMap() {
+    if (map.getAttribute("data-src")) {
+      map.setAttribute("src", map.getAttribute("data-src"));
+    }
+    map.removeEventListener("mouseover", initMap);
+  }
   // Инициализация библиотеки AOS
   AOS.init();
 });

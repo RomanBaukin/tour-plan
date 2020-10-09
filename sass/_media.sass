@@ -28,6 +28,7 @@
     &-menu
       padding-top: 22px
       padding-bottom: 22px
+      justify-content: space-around
       &__link
         font-size: 12px
         line-height: 15px
@@ -338,6 +339,9 @@
     &__input
       &-group
         flex-basis: 100%
+    &-disclaimer
+      &__links
+        margin-right: auto
   .modal
     &__dialog
       width: 70%
@@ -393,6 +397,9 @@
     width: 100%
   .reviews
     padding-top: 36px
+    &-slider
+      &__text
+        text-align: left
   .activities
     padding: 25px 0 42px
     &__title
@@ -430,7 +437,10 @@
       &_inline
         margin-bottom: 20px
       &_bottom
-        margin-bottom: 23px
+        margin-bottom: 19px
+        margin-top: 2px
+    &__form
+      padding-top: 0
     &__additional
       grid-row: 4
       grid-column: 1
@@ -470,14 +480,14 @@
       margin-bottom: 13px
     &-disclaimer
       flex-direction: column
-      margin-top: 25px
+      margin-top: 27px
       &__links
         margin-right: 0
         margin-bottom: 10px
       &__link
         margin-right: 4px
       &__image
-        max-width: 47%
+        width: 47%
   .modal
     &__dialog
       width: 88%

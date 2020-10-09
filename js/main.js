@@ -69,6 +69,10 @@ $(document).ready(function () {
           required: "Please enter your email address",
           email: "Format email address: name@domain.com",
         },
+        mail: {
+          required: "Please enter your email address",
+          email: "Format email address: name@domain.com",
+        },
         phone: {
           required: "Please enter your phone number",
           minlength: "Please enter at least 10 digits",

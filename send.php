@@ -5,19 +5,18 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$mail = $_POST['mail'];
 $email = $_POST['email'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-if ((!isset($_POST['email']))) {
-  $title = "Новое обращение Best Tour Plan";
+if ((isset($_POST['mail']))) {
+  $title = "Новая заявка на подписку";
   $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>Новая заявка</h2>
+<b>E-mail:</b> $mail<br>
 ";
 } elseif ((isset($_POST['name'])) && (isset($_POST['phone'])) && (isset($_POST['email'])) && (isset($_POST['message']))) {
   $title = "Новая заяка из модального окна";
@@ -29,10 +28,12 @@ if ((!isset($_POST['email']))) {
 <b>Сообщение:</b><br>$message
 ";
 } else {
-  $title = "Новая заявка на подписку";
+  $title = "Новое обращение Best Tour Plan";
   $body = "
-<h2>Новая заявка</h2>
-<b>E-mail:</b> $email<br>
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
 ";
 }
 
@@ -77,7 +78,12 @@ try {
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+if ((isset($_POST['mail']))) {
+  header('Location: thankssubscr.html');
+} else {
+  header('Location: thankyou.html');
+}
+
 
 // Отображение багов
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
